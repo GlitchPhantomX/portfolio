@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 import Tilt from "react-parallax-tilt";
 import { motion, AnimatePresence, useInView } from "framer-motion";
 import { styles } from "../styles";
@@ -22,11 +22,9 @@ const ServiceCard = ({ index, title, icon }) => (
       variants={fadeIn("right", "spring", index * 0.15, 0.75)}
       className='w-full relative group'
     >
-      {/* Subtle gradient border */}
       <div className="absolute inset-0 rounded-[20px] bg-gradient-to-r from-[#915EFF] via-purple-500 to-pink-500 opacity-50 group-hover:opacity-75 transition-opacity duration-300 blur-[1px]" />
       
       <div className='relative bg-tertiary rounded-[20px] py-8 px-12 min-h-[280px] flex justify-evenly items-center flex-col border border-[#915EFF]/20 backdrop-blur-sm overflow-hidden'>
-        {/* Background glow effect - very subtle */}
         <motion.div
           className="absolute inset-0 opacity-0 group-hover:opacity-10"
           animate={{
@@ -39,7 +37,6 @@ const ServiceCard = ({ index, title, icon }) => (
           transition={{ duration: 3, repeat: Infinity, ease: "linear" }}
         />
 
-        {/* Icon with animation */}
         <motion.div
           className="relative"
           whileHover={{ scale: 1.1, rotate: 5 }}
@@ -52,12 +49,10 @@ const ServiceCard = ({ index, title, icon }) => (
           />
         </motion.div>
 
-        {/* Title */}
         <h3 className='relative text-white text-[20px] font-bold text-center mt-4'>
           {title}
         </h3>
 
-        {/* Animated bottom accent */}
         <motion.div
           className="absolute bottom-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-[#915EFF] to-transparent"
           initial={{ scaleX: 0 }}
@@ -69,7 +64,6 @@ const ServiceCard = ({ index, title, icon }) => (
   </Tilt>
 );
 
-// Tooltip content components
 const TechTooltip = ({ tech, description }) => (
   <div className="p-3 max-w-xs">
     <p className="text-sm font-semibold text-white mb-1">{tech}</p>
@@ -84,7 +78,6 @@ const AIToolTooltip = ({ tool, description }) => (
   </div>
 );
 
-// Counter component with animation
 const AnimatedCounter = ({ end, duration = 2, suffix = "" }) => {
   const [count, setCount] = useState(0);
   const ref = useRef(null);
@@ -277,7 +270,6 @@ const About = () => {
 
   return (
     <>
-      {/* Hero section wali exact same animated background particles */}
       <div className="absolute inset-0 z-0 pointer-events-none">
         {[...Array(50)].map((_, i) => (
           <motion.div
@@ -301,7 +293,6 @@ const About = () => {
         ))}
       </div>
 
-      {/* Section header */}
       <motion.div variants={textVariant()} className="relative z-10">
         <motion.p 
           className={`${styles.sectionSubText} relative inline-block`}
@@ -320,7 +311,6 @@ const About = () => {
         </h2>
       </motion.div>
 
-      {/* Tabs Navigation - Clean Design */}
       <motion.div
         className="mt-10 flex flex-wrap gap-2 relative z-10"
         initial={{ opacity: 0, y: 20 }}
@@ -354,7 +344,6 @@ const About = () => {
         ))}
       </motion.div>
 
-      {/* Tab Content - No Box, Just Left Border */}
       <motion.div
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-8 relative pl-6 z-10'
@@ -368,7 +357,6 @@ const About = () => {
         </AnimatePresence>
       </motion.div>
 
-      {/* Stats section - No boxes, animated counters */}
       <motion.div
         className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 relative z-10"
         initial={{ opacity: 0, y: 30 }}
@@ -396,7 +384,6 @@ const About = () => {
             </motion.h4>
             <p className="text-secondary text-sm">{stat.label}</p>
             
-            {/* Bottom line indicator */}
             <motion.div
               className="mt-3 mx-auto w-12 h-[2px] bg-[#915EFF]/30"
               initial={{ scaleX: 0 }}
@@ -407,7 +394,6 @@ const About = () => {
         ))}
       </motion.div>
 
-      {/* Service cards */}
       <motion.div 
         className='mt-20 flex flex-wrap gap-10 justify-center relative z-10'
         initial={{ opacity: 0 }}
@@ -419,7 +405,6 @@ const About = () => {
         ))}
       </motion.div>
 
-      {/* Bottom decorative element */}
       <motion.div
         className="mt-16 h-[2px] bg-gradient-to-r from-transparent via-[#915EFF] to-transparent relative z-10"
         initial={{ scaleX: 0 }}

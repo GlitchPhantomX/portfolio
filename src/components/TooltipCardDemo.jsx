@@ -1,6 +1,5 @@
 "use client";
 import { Tooltip } from "@/components/ui/tooltip-card";
-import React from "react";
 
 export function TooltipCardDemo() {
   return (

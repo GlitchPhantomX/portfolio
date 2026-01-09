@@ -1,6 +1,4 @@
-// src/components/Footer.jsx
 
-import React from "react";
 import { motion } from "framer-motion";
 import { Github, Linkedin, Twitter, Mail, ExternalLink, Heart } from "lucide-react";
 

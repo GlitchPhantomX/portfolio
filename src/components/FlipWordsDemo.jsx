@@ -1,5 +1,4 @@
-import React from "react";
-import { FlipWords } from "../components/ui/flip-words";
+import { FlipWords } from "./ui/flip-words";
 
 export function FlipWordsDemo() {
   const words = ["Full Stack Developer", "AI Developer", "Backend Developer", "Web Developer"];
