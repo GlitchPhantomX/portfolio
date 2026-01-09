@@ -21,14 +21,30 @@ import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 
+// NEW Tech Icons - Using actual filenames from your folder
+import nextjs from "./tech/nextjs.png";
+import python from "./tech/python.png";
+import fastapi from "./tech/fastapi.png";
+import postman from "./tech/postman.png";
+import openai from "./tech/openai.png";
+import claude from "./tech/claude-code.png"; // ✅ Fixed: claude-code.png
+import gemini from "./tech/gemini-cli.png"; // ✅ Fixed: gemini-cli.png
+import speckit from "./tech/speckitplus.png"; // ✅ Fixed: speckitplus.png
+
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
 
 import carrent from "./carrent.png";
+import blog from "./blog.png"
+import food from "./food.png"
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import book from "./book.png"
+import todo from "./todo.png"
+import shopco from "./shopco.png"
+import dashboard from "./dashboard.png"
 
 export {
   logo,
@@ -52,11 +68,26 @@ export {
   tailwind,
   typescript,
   threejs,
+  // NEW TECH EXPORTS
+  nextjs,
+  food,
+  python,
+  fastapi,
+  postman,
+  openai,
+  claude,
+  gemini,
+  speckit,
   meta,
   shopify,
   starbucks,
   tesla,
   carrent,
+  blog,
   jobit,
   tripguide,
+  book,
+  todo,
+  shopco,
+  dashboard
 };
