@@ -111,7 +111,7 @@ INSTRUCTIONS:
           'X-Title': 'Areesha Portfolio Chatbot'
         },
         body: JSON.stringify({
-          model: 'mistralai/devstral-2512:free',
+          model: 'liquid/lfm-2.5-1.2b-thinking:free',
           messages: [
             { role: 'system', content: SYSTEM_PROMPT },
             ...messages.slice(-6),
