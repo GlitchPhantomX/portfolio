@@ -10,11 +10,14 @@ import {
   reactjs,
   redux,
   tailwind,
+  bootstrap,
   nodejs,
   mongodb,
+  mysql,
   git,
   figma,
   docker,
+  kubernetes,
   nextjs,
   python,
   fastapi,
@@ -23,6 +26,8 @@ import {
   claude,
   gemini,
   speckit,
+  openclaw,
+  huggingface,
   food,
   carrent,
   jobit,
@@ -103,6 +108,10 @@ const technologies = [
     icon: tailwind,
   },
   {
+    name: "Bootstrap",
+    icon: bootstrap,
+  },
+  {
     name: "Node JS",
     icon: nodejs,
   },
@@ -119,6 +128,10 @@ const technologies = [
     icon: mongodb,
   },
   {
+    name: "MySQL",
+    icon: mysql,
+  },
+  {
     name: "Three JS",
     icon: threejs,
   },
@@ -133,6 +146,10 @@ const technologies = [
   {
     name: "Docker",
     icon: docker,
+  },
+  {
+    name: "Kubernetes",
+    icon: kubernetes,
   },
   {
     name: "Postman",
@@ -154,9 +171,32 @@ const technologies = [
     name: "SpecKit Plus",
     icon: speckit,
   },
+  {
+    name: "OpenClaw",
+    icon: openclaw,
+  },
+  {
+    name: "Huggingface",
+    icon: huggingface,
+  },
 ];
 
 const experiences = [
+  {
+    title: "Software Engineer",
+    company_name: "CarbonRepro",
+    icon: backend,
+    iconBg: "#383E56",
+    date: "July 2026 - Present",
+    points: [
+      "Develop scalable and high-performance backend services using Python and FastAPI, ensuring reliability, maintainability, and clean architecture.",
+      "Design, build, and integrate secure RESTful APIs to support AI-powered applications and seamless communication between distributed services.",
+      "Collaborate with cross-functional engineering teams using Git-based workflows, participating in code reviews, feature development, and agile practices.",
+      "Architect and optimize backend solutions with a strong focus on scalability, performance, security, and maintainability.",
+      "Integrate third-party APIs and external services while ensuring secure authentication, efficient data exchange, and system reliability.",
+      "Debug, troubleshoot, and resolve complex backend issues to improve application stability, performance, and user experience.",
+    ],
+  },
   {
     title: "Full Stack Web Developer (Projects & Hackathons)",
     company_name: "Self Projects & Hackathons",
@@ -178,7 +218,7 @@ const experiences = [
     date: "2025 - Past",
     points: [
       "Worked with OpenAI Agents SDK, Prompt Engineering, and Context Engineering.",
-      "Built AI agents using SpecKit Plus, Claude Code CLI, and Gemini CLI.",
+      "Built AI agents using SpecKit Plus, Claude Code CLI, Gemini CLI, and OpenClaw.",
       "Designed intelligent workflows for automation and AI-powered applications.",
       "Currently researching agentic AI and multi-agent system architectures.",
     ],

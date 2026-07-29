@@ -20,6 +20,12 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
+import bootstrap from "./tech/bootstrap.jpg";
+import huggingface from "./tech/huggingface.jpg";
+import kubernetes from "./tech/kubernetes.jpg";
+import mysql from "./tech/mysql.jpg";
+import openclaw from "./tech/openclaw.jpg";
+
 
 // NEW Tech Icons - Using actual filenames from your folder
 import nextjs from "./tech/nextjs.png";
@@ -61,18 +67,23 @@ export {
   git,
   html,
   javascript,
+  mysql,
   mongodb,
   nodejs,
   reactjs,
   redux,
   tailwind,
   typescript,
+  bootstrap,
+  huggingface,
   threejs,
+  kubernetes,
   // NEW TECH EXPORTS
   nextjs,
   food,
   python,
   fastapi,
+  openclaw,
   postman,
   openai,
   claude,
